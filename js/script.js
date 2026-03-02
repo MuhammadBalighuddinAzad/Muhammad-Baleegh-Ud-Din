@@ -4,8 +4,9 @@ behavior:"smooth"
 });
 }
 
-/* AI Brain Simulation */
-function aiChat(event){
+/* Founder AI Brain Simulation */
+
+function aiBrain(event){
 
 if(event.key === "Enter"){
 
@@ -14,18 +15,18 @@ let output = document.getElementById("ai-output");
 
 let text = input.value.toLowerCase();
 
-let response = "CoreX AI Processing...";
+let response = "CoreX Founder AI Processing...";
 
-if(text.includes("skills")){
-response = "AI, Cybersecurity, C++, Python, Web Engineering.";
+if(text.includes("vision")){
+response = "Build intelligent enterprise AI security ecosystems.";
 }
 
 if(text.includes("project")){
-response = "Working on AI Secure Enterprise Systems.";
+response = "AI Secure Enterprise System + Threat Intelligence.";
 }
 
 if(text.includes("corex")){
-response = "CoreX Research = Future Technology Innovation Center.";
+response = "CoreX = Future Technology Research + Innovation.";
 }
 
 output.innerHTML += "<br>> " + input.value;
